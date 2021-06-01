@@ -7,155 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/457f1786da.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/static/style.css">
-    <title>Cook Menu</title>
+    <script src="/src/app.js" type="module"></script>
+    <title>Cook Planner</title>
 </head>
 
 <body>
     <header>
         <nav>
-            <div class="logo"><i class="fas fa-utensils"><a href="#">Cook Planner</a></i></div>
-            <a style="display:none" class="nav-link" href="#">Create</a>
-            <a style="display:none" class="nav-link" href="#">Shop List</a>
-            <a style="display:none" class="nav-link" href="#">Something</a>
-            <a href="#" class="button">Register</a>
-            <a href="#" class="button">Login</a>
+            <div class="logo"><i class="fas fa-utensils"><a href="/">Cook Planner</a></i></div>
+            <div class="user">
+                <a class="nav-link" href="/create">Create</a>
+                <a class="nav-link" href="/grocery-list">Shop List</a>
+                <a href="javascript:void(0)" id="logout" class="button">Logout</a>
+            </div>
+            <div class="guest">
+                <a href="/register" class="button">Register</a>
+                <a href="/login" class="button">Login</a>
+            </div>
         </nav>
     </header>
-    <main class="containers">
-        <div class="first-page">
-            <img src="/static/Images/first-page.jpg" style="width: 100%; height: 350px; filter: brightness(50%)">
-            <div class="center-text">
-                <h1>Make your weekly menu</h1>
-                <button>NOW</button>
-            </div>
-        </div>
-        </div>
-        <div class="shop-container">
-            <h1><i class="fas fa-shopping-basket"></i>Shoping List:</h1>
-            <div class="shoping-card">
-                <div class="product-wrapper"><span class="product"><i class="fas fa-check"></i>Breed1</span> <span
-                        class="quantity">7 qty.</span></div>
-                <div class="product-wrapper"><span class="product"><i class="fas fa-check"></i>Breed</span> <span
-                        class="quantity">7 qty.</span></div>
-                <div class="product-wrapper"><span class="product"><i class="fas fa-check"></i>Breed</span> <span
-                        class="quantity">7</span></div>
-                <div class="product-wrapper"><span class="product"><i class="fas fa-check"></i>Breed</span> <span
-                        class="quantity">7</span></div>
-                <div class="product-wrapper"><span class="product"><i class="fas fa-check"></i>Breed</span> <span
-                        class="quantity">7</span></div>
-
-            </div>
-        </div>
-        </div>
-        <div class="menu">
-            <h1>Weekly Menu:</h1>
-            <div class="starter">
-                <h2>Starters:</h2>
-                <div class="card-table">
-                    <div class="food-card">
-                        <h3><i class="fas fa-check"></i>Zelena Salata </h3>
-                        <img src="/static/Images/salat.jpg" alt="" style="width:140px;height:120px;">
-                    </div>
-                    <div class="food-card">
-                        <h3><i class="fas fa-check"></i>Zelena Salata</h3>
-                        <img src="/static/Images/salat.jpg" alt="" style="width:140px;height:120px;">
-                    </div>
-                    <div class="food-card">
-                        <h3><i class="fas fa-check"></i>Zelena Salata </h3>
-                        <img src="/static/Images/salat.jpg" alt="" style="width:140px;height:120px;">
-                    </div>
-                    <div class="food-card">
-                        <h3><i class="fas fa-check"></i>Zelena Salata </h3>
-                        <img src="/static/Images/salat.jpg" alt="" style="width:140px;height:120px;">
-                    </div>
-                    <div class="food-card">
-                        <h3><i class="fas fa-check"></i>Zelena Salata </h3>
-                        <img src="/static/Images/salat.jpg" alt="" style="width:140px;height:120px;">
-                    </div>
-                    <div class="food-card">
-                        <h3><i class="fas fa-check"></i>Zelena Salata </h3>
-                        <img src="/static/Images/salat.jpg" alt="" style="width:140px;height:120px;">
-                    </div>
-                </div>
-            </div>
-            <div class="meal">
-                <h2>Meals:</h2>
-                <div class="card-table">
-                    <div class="food-card">
-                        <h3><i class="fas fa-check"></i>Musaka</h3>
-                        <img src="static/Images/musaka.jpg" alt="" style="width:140px;height:120px;">
-                    </div>
-                    <div class="card-table">
-                        <div class="food-card">
-                            <h3><i class="fas fa-check"></i>Musaka</h3>
-                            <img src="static/Images/musaka.jpg" alt="" style="width:140px;height:120px;">
-                        </div>
-                        <div class="card-table">
-                            <div class="food-card">
-                                <h3><i class="fas fa-check"></i>Musaka</h3>
-                                <img src="static/Images/musaka.jpg" alt="" style="width:140px;height:120px;">
-                            </div>
-                            <div class="food-card">
-                                <h3><i class="fas fa-check"></i>Musaka</h3>
-                                <img src="static/Images/musaka.jpg" alt="" style="width:140px;height:120px;">
-                            </div>
-                            <div class="food-card">
-                                <h3><i class="fas fa-check"></i>Musaka</h3>
-                                <img src="static/Images/musaka.jpg" alt="" style="width:140px;height:120px;">
-                            </div>
-                            <div class="food-card">
-                                <h3><i class="fas fa-check"></i>Musaka</h3>
-                                <img src="static/Images/musaka.jpg" alt="" style="width:140px;height:120px;">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-container">
-                    <h1>Choose Weekly Menu:</h1>
-                    <p>Choose your option and Cook planner will create a weekly menu for you.</p>
-                    <div class="cards">
-                        <div class="card">
-                            <h1>Medium Pack</h1>
-                            <div class="card-content">
-                                <h3><i class="fas fa-carrot"></i> 3 Starters</h3>
-                                <h3><i class="fas fa-drumstick-bite"></i> 3 Meals</h3>
-                            </div>
-                            <a href="" class="button">Choose</a>
-                        </div>
-                        <div class="card">
-                            <h1>Hungry Pack</h1>
-                            <div class="card-content">
-                                <h3><i class="fas fa-carrot"></i> 6 Starters</h3>
-                                <h3><i class="fas fa-drumstick-bite"></i> 6 Meals</h3>
-                            </div>
-                            <a href="" class="button">Choose</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="login-page">
-                    <div class="form">
-                        <form class="register-form">
-                            <h1>REGISTER</h1>
-                            <input type="text" placeholder="name" />
-                            <input type="password" placeholder="password" />
-                            <input type="text" placeholder="email address" />
-                            <button>create</button>
-                            <p class="message">Already registered? <a href="#">Sign In</a></p>
-                        </form>
-                    </div>
-                </div>
-                <div class="login-page">
-                    <div class="form">
-                        <form class="login-form">
-                            <h1>LOGIN</h1>
-                            <input type="text" placeholder="email address" />
-                            <input type="password" placeholder="password" />
-                            <button>login</button>
-                            <p class="message">Not registered? <a href="#">Create an account</a></p>
-                        </form>
-                    </div>
-                </div>
-    </main>
+    <main class="containers"> </main>
 </body>
 
 </html>

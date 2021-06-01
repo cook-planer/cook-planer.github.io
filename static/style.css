@@ -11,7 +11,7 @@ body{
     display: flex;
     flex-flow: column;
     min-height: 100vh;
-    justify-content: space-between;
+    justify-content: flex-start;
     color: rgb(85, 82, 82);
     background-color: rgb(203, 219, 204);
 }
@@ -389,4 +389,8 @@ box-shadow: 15px 11px 24px -4px rgba(0,0,0,0.34);
 
 .center-text h1 {
   margin:  45px;
+}
+
+nav .user{
+  display: 'none';
 }
