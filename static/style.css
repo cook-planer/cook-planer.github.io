@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    color: rgb(85, 82, 82);
+    background-color: rgb(203, 219, 204);
+}
+
+li, a, button, form, input {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #24252A;
+    border:none;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.logo{
+    font-size: 24px;
+    margin-right: auto;
+    justify-content: left;
+    cursor: pointer;
+    justify-content: space-between;
+    transition: all 0.2s ease 0s;
+}
+
+.logo i:hover{
+    color:#FFFFFF;
+    transform: scale(1.25);
+}
+
+.logo i:hover > a{
+    color:#FFFFFF;
+}
+
+
+.fas{
+    color:#fff;
+}
+
+.fas a{
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+.nav-link{
+    list-style:none;
+    display: inline-block;
+    padding:  0px 20px;
+}
+
+.nav-link:hover{
+    color:rgb(250, 250, 250);
+    transform: scale(1.05);
+}
+
+.button, button{
+    margin-left: 20px;
+    padding: 9px 20px;
+    background: -webkit-linear-gradient(right, #56741e, #2dbd6e);
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover, .button:hover{
+  background: -webkit-linear-gradient(left, #97e20c, #56741e);
+    transform: scale(1.25);
+    border-radius: 9px;
+}
+
+
+
+.container{
+    position: relative;
+    margin: 18px 10px;
+    border: 1px solid grey;
+    align-items: center;
+}
+
+.login-page {
+    margin-top: 15px;
+    width: 420px;
+    padding: 8% 0 0;
+    margin: auto;
+  }
+  .form {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+  .form input {
+    outline: 0;
+    background: #f2f2f2;
+    color: #666161;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  .form button {
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 100%;
+    border: 0;
+    margin: auto;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+  }
+  .form button:hover,.form button:active,.form button:focus {
+    background: #43A047;
+  }
+  .form .message {
+    margin: 15px 0 0;
+    color: #666161;
+    font-size: 14px;
+  }
+  .form .message a {
+    color: #4CAF50;
+    font-size: 15px;
+    margin-left: 8px;
+    text-decoration: none;
+  }
+  .form .message a:hover{
+    color: rgba(155, 226, 63, 0.8);
+  }
+  .form .register-form {
+    margin-top: 5px;
+    display: block;
+  }
+  .form .register-form h1, .form .login-form h1{
+    margin: 15px auto;
+    color: rgb(45, 141, 77);
+  }
+  .container {
+    position: relative;
+    z-index: 1;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .container:before, .container:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  
+
+/* card for choises */
+.cards{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+.card-container{
+    margin: 2%;
+    display: flex;
+    flex-flow: column;
+    padding: 35px;
+}
+.card:hover{
+    transform: scale(1.25);
+}
+.card-container h1{
+    margin: auto;
+
+}
+.card{
+    background: #4CAF50;
+    border-radius: 3px;
+    max-width: 460px;
+    background-color: #FFFFFF;
+    width: 320px;
+    margin: 45px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    padding: 12px;
+    transition: all .2s ease-in-out;
+}
+
+.card h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    color: #2c2e2c;
+    opacity: 85%;
+}
+p {  
+    text-align: center;
+    margin-top: 15px;
+}
+
+.card a{
+    margin: 5px auto;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card-content{
+    padding: 25px;
+    margin-left: 25%;
+}
+
+.card-content h3{
+    margin-top: 10px;
+}
+.fa-drumstick-bite, .fa-carrot{
+    color:rgb(70, 70, 70)
+}
+
+/*Menu*/
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 15px 35px;
+}
+
+
+.starter, .meal{
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /*align-self: flex-start;
+  align-items: center;*/
+
+}
+.meal h2{
+  margin-right: 10px;
+}
+.starter h2, .meal h2{
+  align-self: flex-start;
+  margin: 10px 0;
+}
+
+.card-table{
+  display: flex;
+  flex-wrap: wrap;
+}
+.food-card{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 7px;
+  padding: 10px;
+  margin: 10px;
+  background: cornsilk;
+  box-shadow: 14px 11px 9px -1px rgba(0,0,0,0.17);
+  -webkit-box-shadow: 14px 11px 9px -1px rgba(0,0,0,0.17);
+  -moz-box-shadow: 14px 11px 9px -1px rgba(0,0,0,0.17);
+}
+.food-card h3:hover{
+  color: #43A047;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.food-card img{
+  margin: 5px;
+  border-radius: 2px;
+}
+
+li{
+  display:inline;
+  text-align: center;
+  background-color: rgb(253, 253, 253);
+  color: #24252A;
+  max-height: 100px;
+  max-width: 120px;
+  margin-left: 14px;
+  padding: 12px;
+  list-style-type: none;
+  -webkit-box-shadow: 15px 11px 24px -4px rgba(0,0,0,0.34); 
+box-shadow: 15px 11px 24px -4px rgba(0,0,0,0.34);
+}
+
+.fa-check{
+  color:rgb(222, 224, 219);
+  margin-right: 10px;
+  transition: all .2s ease-in-out;
+}
+
+.fa-check:hover{
+  color:rgb(107, 173, 7);
+  transform: scale(1.25);
+}
+
+.menu h1{
+  margin: auto;
+  padding: 25px;
+}
+
+/*Shoping list*/
+
+.shop-container{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  margin: 15px 35px;
+}
+
+.shop-container h1{
+  display: inline;
+  margin: auto;
+}
+
+.shoping-card{
+  width: 65%;
+  margin: 20px;
+  padding: 25px;
+  display: inherit;
+  flex-direction: column;
+  background-color: rgb(253, 253, 253);
+  box-shadow: 15px 11px 24px -4px rgba(0,0,0,0.34);
+}
+
+.product-wrapper{
+  display: inherit;
+  margin: 10px;
+  justify-content: space-between;
+  border-bottom: 1px inset darkslategray;
+}
+
+/*kogato se sloji tikcheto*/
+.product-wrapper .done{
+  text-decoration: line-through;
+}
+
+.fa-times{
+  color:#e41c1c;
+}
+
+.fa-times{
+  transform: scale(1.25);
+}
+
+.first-page{
+  position: relative;
+  text-align: center;
+  color: white
+}
+
+.center-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.center-text h1 {
+  margin:  45px;
+}
