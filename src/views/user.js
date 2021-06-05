@@ -62,8 +62,10 @@ export async function registerPage(ctx){
         if (!email || !password || !username) {
             return alert('All fields must be field');
         }
+
         await register(email, username, password);
-        ctx.userNav();
+
+        ctx.page.redirect('/');
     }
 
 

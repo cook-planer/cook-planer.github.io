@@ -1,3 +1,5 @@
+import { html } from '//unpkg.com/lit-html?module';
+
 const menuTeplate = () => html`
  <div class="menu">
             <h1>Weekly Menu:</h1>
@@ -65,6 +67,10 @@ const menuTeplate = () => html`
             </div>
         </div>
 `;
+
+const starterTamplate = (start) =>{
+    //TODO
+}
 
 export async function menuPage(ctx){
     ctx.render(menuTeplate());

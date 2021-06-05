@@ -1,10 +1,12 @@
 import { setUserData, clearUserData, getUserData } from '../util.js';
+import {addMenuShopAndList, createMenu, createShopList, addWeeklyMenu, userData } from './data.js';
 
 
 export const settings = {
     host: '',
     appId: '',
     apiKey: '',
+    apiMasterKey: '',
 };
 
 async function request(url, options) {
@@ -33,7 +35,8 @@ function getOptions(method = 'get', body) {
         method,
         headers: {
             'X-Parse-Application-Id': settings.appId,
-            'X-Parse-REST-API-Key': settings.apiKey
+            'X-Parse-REST-API-Key': settings.apiKey,
+            'X-Parse-Master-Key': settings.apiMasterKey
         }
     };
 
@@ -41,7 +44,9 @@ function getOptions(method = 'get', body) {
     if (user) {
         options.headers['X-Parse-Session-Token'] = user.sessionToken;
     }
-
+    if(method === 'get'){
+        options.headers['X-Parse-Revocable-Session'] =1;
+    }
     if (body) {
         options.headers['Content-Type'] = 'application/json';
         options.body = JSON.stringify(body);
@@ -68,17 +73,26 @@ export async function del(url) {
 
 export async function login(username, password) {
     const result = await post(settings.host + '/login', { username, password });
+    const user = await userData(result.objectId);
+    const menu = user.menuId;
+    const shopList = user.shopListId;
+    setUserData(user, menu, shopList);
 
-    setUserData(Object.assign({}, result, { username }));
-    console.log(result)
     return result;
 }
 
 export async function register(email, username, password) {
-    const result = await post(settings.host + '/users', { email, username, password });
-
-    setUserData(Object.assign({}, result, { username }));
-
+    const result = await post(settings.host + '/users', {
+        email,
+        username,
+        password,
+    });
+    const data = await addMenuShopAndList(result.objectId);
+    const user = await userData(result.objectId);
+    user.sessionToken = result.sessionToken;
+    const menu = user.menuId;
+    const shopList = user.shopListId;
+    setUserData(user, menu, shopList);
     return result;
 }
 

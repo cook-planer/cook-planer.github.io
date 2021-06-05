@@ -11,6 +11,8 @@ import { groceryListPage } from '/src/views/groceryList.js';
 import { menuPage } from './views/menu.js';
 import { createRecipe } from './api/data.js';
 
+
+
 const main = document.querySelector('main');
 
 document.getElementById('logout').addEventListener('click', logout);

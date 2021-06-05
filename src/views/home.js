@@ -14,7 +14,7 @@ const homeTemplate = () => html`
 
 
 export async function homePage(ctx) {
-    const user = getUserData();
+    const user = await getUserData();
     if (user){
         ctx.page.redirect('/create');
     }

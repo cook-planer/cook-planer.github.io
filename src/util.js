@@ -1,18 +1,27 @@
 function getUserData() {
-    const user = sessionStorage.getItem('user');
+    const user = sessionStorage.getItem('sessionToken');
     if (user) {
-        return JSON.parse(user);
+        return user;
     } else {
         return undefined;
     }
 }
 
-function setUserData(user) {
-    sessionStorage.setItem('user', JSON.stringify(user));
+function setUserData(user, menu, shopList) {
+    sessionStorage.setItem('sessionToken', user.sessionToken)
+    sessionStorage.setItem('objectId', user.objectId);
+    sessionStorage.setItem('username', user.username);
+    sessionStorage.setItem('menuId', menu.objectId);
+    sessionStorage.setItem('shopListId', shopList.objectId);
+
 }
 
 function clearUserData() {
-    sessionStorage.removeItem('user');
+    sessionStorage.removeItem('sessionToken');
+    sessionStorage.removeItem('objectId');
+    sessionStorage.removeItem('username');
+    sessionStorage.removeItem('menuId');
+    sessionStorage.removeItem('shopListId');
 }
 
 export {
