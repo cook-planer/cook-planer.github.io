@@ -259,14 +259,12 @@ p {
   min-height: 100%;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
-  /*align-self: flex-start;
-  align-items: center;*/
+  flex-direction: row;
+}
+.meal h2:first-of-type{
+  margin-left: 20px;
+}
 
-}
-.meal h2{
-  margin-right: 10px;
-}
 .starter h2, .meal h2{
   align-self: flex-start;
   margin: 10px 0;
