@@ -393,3 +393,8 @@ box-shadow: 15px 11px 24px -4px rgba(0,0,0,0.34);
 nav .user{
   display: 'none';
 }
+
+.msg{
+  font-size: 14px;
+  color: #e41c1c;
+}

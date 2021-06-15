@@ -1,3 +1,8 @@
+function notify(errorText){
+    document.querySelector('.msg').textContent = errorText;
+    document.querySelectorAll('input').forEach(i=> i.style.border='solid 1px red');
+}
+
 function getUserData() {
     const user = sessionStorage.getItem('sessionToken');
     if (user) {
@@ -27,5 +32,6 @@ function clearUserData() {
 export {
     getUserData,
     setUserData,
-    clearUserData
+    clearUserData,
+    notify
 };

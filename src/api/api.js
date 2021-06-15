@@ -15,7 +15,7 @@ async function request(url, options) {
 
         if (response.ok == false) {
             const error = await response.json();
-            throw new Error(error.message);
+            throw new Error(error.error);
         }
 
         try {
@@ -25,7 +25,6 @@ async function request(url, options) {
             return response;
         }
     } catch (err) {
-        alert(err.message);
         throw err;
     }
 }
@@ -73,6 +72,7 @@ export async function del(url) {
 
 export async function login(username, password) {
     const result = await post(settings.host + '/login', { username, password });
+    console.log(result.status)
     const user = await userData(result.objectId);
     const menu = user.menuId;
     const shopList = user.shopListId;
