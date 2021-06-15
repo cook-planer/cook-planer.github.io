@@ -2,12 +2,12 @@ import page from '//unpkg.com/page/page.mjs';
 import { html, render } from '//unpkg.com/lit-html?module';
 
 
-import { logout as apiLogout } from '/src/api/data.js'
-import { getUserData } from "/src/util.js"
-import { homePage } from '/src/views/home.js';
-import { loginPage, registerPage } from '/src/views/user.js';
-import { createPage } from '/src/views/create.js';
-import { groceryListPage } from '/src/views/groceryList.js';
+import { logout as apiLogout } from './api/data.js'
+import { getUserData } from "./util.js"
+import { homePage } from './views/home.js';
+import { loginPage, registerPage } from './views/user.js';
+import { createPage } from './views/create.js';
+import { groceryListPage } from './views/groceryList.js';
 import { menuPage } from './views/menu.js';
 import { createRecipe } from './api/data.js';
 
