@@ -359,12 +359,13 @@ box-shadow: 15px 11px 24px -4px rgba(0,0,0,0.34);
   border-bottom: 1px inset darkslategray;
 }
 
-/*kogato se sloji tikcheto*/
+
 .product-wrapper .done{
   text-decoration: line-through;
 }
 
 .fa-times{
+  margin-right: 10px;
   color:#e41c1c;
 }
 
