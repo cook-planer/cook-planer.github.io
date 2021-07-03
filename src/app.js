@@ -48,7 +48,6 @@ function userNav() {
     if (user) {
         userView.style.display = 'flex';
         guestView.style.display = 'none';
-        hamburger.style.display = 'block';
 
     }
     else {

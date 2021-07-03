@@ -11,7 +11,7 @@ nav {
 
 .logo {
   font-size: 2rem;
-  margin-left: 1rem;
+  margin-left: 1.5rem;
 }
 
 .hamburger {
@@ -53,13 +53,13 @@ nav {
   top: 5rem;
   background-color: rgba(27, 27, 25, 0.9);
   width: 100%;
-  border-radius: 10px;
+  border-radius: 2px;
   text-align: center;
   transition: 0.3s;
   box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
 }
 
-.contentNav.active {
+.contentNav.active .user{
   left: 0;
   z-index: 1;
 
@@ -101,10 +101,8 @@ nav {
   .logo {
     width: 35%
   }
-  .contentNav {
+  .contentNav .user {
     align-content: center;
-    display: flex;
-    position: relative;
     justify-content: flex-end;
     background-color: transparent;
     box-shadow: none;
@@ -112,12 +110,19 @@ nav {
     left: 0%;
     top: 0;
   }
+
+  .contentNav .user{
+    margin: 0;
+  }
   .hamburger {
     display: none;
   }
   .user {
     flex-direction: row;
-    align-items: flex-end;
+  }
+  .nav-link:first-child {
+    margin: 0;
+    margin-right: 2rem;
   }
   .nav-link {
     margin-right: 2rem;

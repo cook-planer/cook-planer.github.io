@@ -12,7 +12,7 @@ html {
     font-size: 90%;
 }
 
-a {
+a, h1, h2 {
     text-decoration: none;
     color: rgb(243, 236, 236);
 }

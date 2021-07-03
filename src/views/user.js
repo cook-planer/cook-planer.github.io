@@ -11,7 +11,7 @@ const loginTemplate = (onSubmit) => html`
             <p class="msg"></p>
             <input name="username" type="text" placeholder="username" />
             <input name="password" type="password" placeholder="password" />
-            <input class="button" type="button" value="Sign In"/>
+            <input class="button" type="submit" value="Sign In"/>
             <p class="message">Not registered? <a href="/register">Create an account</a></p>
         </form>
     </div>
@@ -44,12 +44,12 @@ const registerTemplate = (onSubmit) => html`
 <div class="login-page">
     <div class="form">
         <form @submit=${onSubmit} class="register-form">
-            <h1>REGISTER</h1>
+            <h1>Sign Up</h1>
             <p class="msg"></p>
             <input type="text" name="username" placeholder="username" />
             <input type="password" name="password" placeholder="password" />
             <input type="text" name="email" placeholder="email address" />
-            <input class="button" type="button" value="Sign Up"/>
+            <input class="button" type="submit" value="Sign Up"/>
             <p class="message">Already registered? <a href="/login">Sign In</a></p>
         </form>
     </div>
