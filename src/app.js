@@ -40,20 +40,22 @@ async function logout() {
     page.redirect('/');
 }
 
+
 function userNav() {
     const user = getUserData();
     const userView = document.querySelector('.user');
     const guestView = document.querySelector('.guest');
     const hamburger = document.querySelector('.hamburger');
+
     if (user) {
         userView.style.display = 'flex';
         guestView.style.display = 'none';
-        //hamburger.style.display = 'block';
+        hamburger.classList.remove('hidden');
     }
     else {
         userView.style.display = 'none';
         guestView.style.display = 'block';
-        hamburger.style.display = 'none';
+        hamburger.classList.add('hidden');
     }
 }
 //hamburger 
@@ -64,14 +66,14 @@ const pageContent = document.querySelector("body");
 
 pageContent.addEventListener("click", event => Menu(event));
 
-function Menu(event){
-    if(['hamburger', 'bar'].includes(event.target.className)){
+function Menu(event) {
+    if (['hamburger', 'bar'].includes(event.target.className)) {
         hamburger.className.split().includes('active') ? closeMenu() : activeMenu();
     }
-    else if(['nav-link'].includes(event.target.className)){
+    else if (['nav-link'].includes(event.target.className)) {
         closeMenu();
     }
-    else if(!navContent.contains(event.target)){
+    else if (!navContent.contains(event.target)) {
         closeMenu();
     }
 }
@@ -85,4 +87,5 @@ function activeMenu() {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
 }
+
 

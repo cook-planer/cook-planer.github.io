@@ -17,7 +17,6 @@ nav {
 .hamburger {
   margin-right: 2rem;
   cursor: pointer;
-  display: block;
 }
 
 .bar {
@@ -58,7 +57,9 @@ nav {
   transition: 0.3s;
   box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
 }
-
+.hidden{
+  display: none;
+}
 .contentNav.active .user{
   left: 0;
   z-index: 1;
@@ -125,11 +126,6 @@ nav {
   }
 }
 
-@media only screen and (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-}
 /* card for choises */
 
 .cards {
