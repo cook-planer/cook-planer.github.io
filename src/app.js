@@ -48,7 +48,7 @@ function userNav() {
     if (user) {
         userView.style.display = 'flex';
         guestView.style.display = 'none';
-
+        //hamburger.style.display = 'block';
     }
     else {
         userView.style.display = 'none';
@@ -56,7 +56,6 @@ function userNav() {
         hamburger.style.display = 'none';
     }
 }
-
 //hamburger 
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".contentNav");

@@ -72,7 +72,6 @@ export async function del(url) {
 
 export async function login(username, password) {
     const result = await post(settings.host + '/login', { username, password });
-    console.log(result.status)
     const user = await userData(result.objectId);
     const menu = user.menuId;
     const shopList = user.shopListId;

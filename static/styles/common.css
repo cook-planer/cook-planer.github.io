@@ -16,8 +16,8 @@ nav {
 
 .hamburger {
   margin-right: 2rem;
-  display: block;
   cursor: pointer;
+  display: block;
 }
 
 .bar {
@@ -110,10 +110,6 @@ nav {
     left: 0%;
     top: 0;
   }
-
-  .contentNav .user{
-    margin: 0;
-  }
   .hamburger {
     display: none;
   }
@@ -129,6 +125,11 @@ nav {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+}
 /* card for choises */
 
 .cards {
