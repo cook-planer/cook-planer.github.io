@@ -1,0 +1,46 @@
+.center-text {
+    background-color: rgb(104, 100, 94, 0.3);
+    padding: 50px;
+    letter-spacing: 1px;
+}
+
+.center-text :nth-child() {
+    filter: brightness(90%);
+}
+
+.center-text h1 {
+    margin-bottom: 2rem;
+}
+
+.center-text a {
+    margin-top: 3rem;
+}
+
+.center-text p {
+    font-size: 1.3rem;
+}
+
+.first-page img {
+    width: 100%;
+    min-height: 600px;
+    height: auto;
+    display: block;
+    position: absolute;
+    filter: brightness(40%);
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.center-text {
+    color: rgb(236, 227, 227);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+}
+
+@media only screen and (min-width: 768px) {
+    .center-text {
+        font-size: 1.5rem;
+        margin-top: 10%;
+    }
+}

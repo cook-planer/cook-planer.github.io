@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/457f1786da.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/styles/style.css">
     <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
     <script src="/src/app.js" type="module"></script>
     <title>Cook Planner</title>
@@ -15,16 +15,22 @@
 <body>
     <header>
         <nav>
-            <div class="logo"><i class="fas fa-utensils"><a href="/">Cook Planner</a></i></div>
-            <div class="user">
-                <a class="nav-link" href="/create">Create</a>
-                <a class="nav-link" href="/menu">Menu</a>
-                <a class="nav-link" href="/grocery-list">Shop List</a>
-                <a href="javascript:void(0)" id="logout" class="button">Logout</a>
+            <div class="logo"><a href="/">Cook Planner</a></i></div>
+            <div class="contentNav">
+                <div class="user">
+                    <a class="nav-link" href="/create">Create</a>
+                    <a class="nav-link" href="/menu">Menu</a>
+                    <a class="nav-link" href="/grocery-list">Shop List</a>
+                    <a class="nav-link" href="javascript:void(0)" id="logout">Logout</a>
+                </div>
+                <div class="guest">
+                    <a class="nav-link nav-btn" href="/login">Sign In</a>
+                </div>
             </div>
-            <div class="guest">
-                <a href="/register" class="button">Register</a>
-                <a href="/login" class="button">Login</a>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
         </nav>
     </header>

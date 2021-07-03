@@ -4,10 +4,13 @@ import { html } from '//unpkg.com/lit-html?module';
 
 const homeTemplate = () => html`
         <div class="first-page">
-            <img src="/static/Images/first-page.jpg" style="width: 100%; height: 90vh; filter: brightness(50%)">
+            <img src="/static/Images/first-page.jpg">
             <div class="center-text">
-                <h1>Make your weekly menu</h1>
-                <a href="/login" class="button">Login</a>
+            <h1>Make your weekly menu</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptas maiores, nihil esse nam
+                    mollitia incidunt ad, asperiores earum corrupti totam ratione, itaque laboriosam reprehenderit et
+                    sed? Quasi, eius provident!</p>
+                <a href="/register" class="button">Get Started</a>
             </div>
         </div>
 `;

@@ -1,30 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body {
-    display: flex;
-    flex-flow: column;
-    min-height: 100vh;
-    justify-content: flex-start;
-    color: rgb(85, 82, 82);
-    background-color: rgb(203, 219, 204);
+html {
+    background-color: rgb(152, 161, 148);
+    color: rgb(204, 204, 204);
+    font-family: 'Alegreya', 'Georgia', serif;
+    font-size: 90%;
 }
 
-li, a, button, form, input {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    color: #fff;
+a {
     text-decoration: none;
+    color: rgb(243, 236, 236);
 }
 
-.button, button {
-    margin-left: 20px;
-    padding: 9px 20px;
+.logo a {
+    margin-left: 2rem;
+    color: honeydew;
+}
+
+.logo:hover{
+    transform: scale(1.25);
+}
+
+.header {
+    border-bottom: 1px solid #081f3d;
+}
+
+.button{
+    color: #fff;
+    margin: auto;
+    padding: 10px 60px;
     background: -webkit-linear-gradient(right, #56741e, #2dbd6e);
     border: none;
     border-radius: 9px;
@@ -32,8 +41,21 @@ li, a, button, form, input {
     transition: all 0.3s ease 0s;
 }
 
-button:hover, .button:hover {
+.nav-btn{
+    color: #fff;
+    margin: auto;
+    padding: 2px 15px;
+    background: -webkit-linear-gradient(right, #56741e, #2dbd6e);
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.button:hover, .nav-btn:hover{
     background: -webkit-linear-gradient(left, #97e20c, #56741e);
     transform: scale(1.25);
     border-radius: 9px;
-}
+    text-decoration:none;
+  }
+

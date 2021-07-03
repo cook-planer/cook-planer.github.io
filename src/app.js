@@ -44,16 +44,47 @@ function userNav() {
     const user = getUserData();
     const userView = document.querySelector('.user');
     const guestView = document.querySelector('.guest');
-
+    const hamburger = document.querySelector('.hamburger');
     if (user) {
-        userView.style.display = 'block';
+        userView.style.display = 'flex';
         guestView.style.display = 'none';
+        hamburger.style.display = 'block';
 
     }
     else {
         userView.style.display = 'none';
         guestView.style.display = 'block';
+        hamburger.style.display = 'none';
     }
 }
 
+//hamburger 
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".contentNav");
+const navContent = document.querySelector("nav");
+const pageContent = document.querySelector("body");
+
+pageContent.addEventListener("click", event => Menu(event));
+
+function Menu(event){
+    if(['hamburger', 'bar'].includes(event.target.className)){
+        hamburger.className.split().includes('active') ? closeMenu() : activeMenu();
+    }
+    else if(['nav-link'].includes(event.target.className)){
+        closeMenu();
+    }
+    else if(!navContent.contains(event.target)){
+        closeMenu();
+    }
+}
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
+
+function activeMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
 

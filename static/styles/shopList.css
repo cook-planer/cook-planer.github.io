@@ -48,21 +48,6 @@
     color: white
 }
 
-.center-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.center-text h1 {
-    margin: 45px;
-}
-
-nav .user {
-    display: 'none';
-}
-
 .msg {
     font-size: 14px;
     color: #e41c1c;
