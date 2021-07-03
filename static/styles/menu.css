@@ -1,0 +1,82 @@
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 15px 35px;
+}
+
+.starter, .meal {
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.meal h2:first-of-type {
+    margin-left: 20px;
+}
+
+.starter h2, .meal h2 {
+    align-self: flex-start;
+    margin: 10px 0;
+}
+
+.card-table {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.food-card {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 10px;
+    background: cornsilk;
+    box-shadow: 14px 11px 9px -1px rgba(0, 0, 0, 0.17);
+    -webkit-box-shadow: 14px 11px 9px -1px rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: 14px 11px 9px -1px rgba(0, 0, 0, 0.17);
+}
+
+.food-card h3:hover {
+    color: #43A047;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.food-card img {
+    margin: 5px;
+    border-radius: 2px;
+}
+
+li {
+    display: inline;
+    text-align: center;
+    background-color: rgb(253, 253, 253);
+    color: #24252A;
+    max-height: 100px;
+    max-width: 120px;
+    margin-left: 14px;
+    padding: 12px;
+    list-style-type: none;
+    -webkit-box-shadow: 15px 11px 24px -4px rgba(0, 0, 0, 0.34);
+    box-shadow: 15px 11px 24px -4px rgba(0, 0, 0, 0.34);
+}
+
+.fa-check {
+    color: rgb(222, 224, 219);
+    margin-right: 10px;
+    transition: all .2s ease-in-out;
+}
+
+.fa-check:hover {
+    color: rgb(107, 173, 7);
+    transform: scale(1.25);
+}
+
+.menu h1 {
+    margin: auto;
+    padding: 25px;
+}

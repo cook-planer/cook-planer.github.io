@@ -1,0 +1,126 @@
+.container {
+  position: relative;
+  margin: 18px 10px;
+  border: 1px solid grey;
+  align-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: #24252A;
+  border: none;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.logo {
+  font-size: 24px;
+  margin-right: auto;
+  justify-content: left;
+  cursor: pointer;
+  justify-content: space-between;
+  transition: all 0.2s ease 0s;
+}
+
+.logo i:hover {
+  color: #FFFFFF;
+  transform: scale(1.25);
+}
+
+.logo i:hover>a {
+  color: #FFFFFF;
+}
+
+.fas {
+  color: #fff;
+}
+
+.fas a {
+  font-size: 24px;
+  margin-left: 10px;
+}
+
+.nav-link {
+  list-style: none;
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav-link:hover {
+  color: rgb(250, 250, 250);
+  transform: scale(1.05);
+}
+
+/* card for choises */
+
+.cards {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-container {
+  margin: 2%;
+  display: flex;
+  flex-flow: column;
+  padding: 35px;
+}
+
+.card:hover {
+  transform: scale(1.25);
+}
+
+.card-container h1 {
+  margin: auto;
+}
+
+.card {
+  background: #4CAF50;
+  border-radius: 3px;
+  max-width: 460px;
+  background-color: #FFFFFF;
+  width: 320px;
+  margin: 45px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  padding: 12px;
+  transition: all .2s ease-in-out;
+}
+
+.card h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px auto;
+  color: #2c2e2c;
+  opacity: 85%;
+}
+
+p {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.card a {
+  margin: 5px auto;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-content {
+  padding: 25px;
+  margin-left: 25%;
+}
+
+.card-content h3 {
+  margin-top: 10px;
+}
+
+.fa-drumstick-bite, .fa-carrot {
+  color: rgb(70, 70, 70)
+}
