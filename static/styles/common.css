@@ -47,7 +47,7 @@ nav {
 
 
 .contentNav .user{
-  position: fixed;
+  position: absolute;
   left: -100%;
   top: 5rem;
   background-color: rgba(27, 27, 25, 0.9);
@@ -195,4 +195,62 @@ p {
 
 .fa-drumstick-bite, .fa-carrot {
   color: rgb(70, 70, 70)
+}
+
+/*PopUp Message*/
+.popup {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(24, 25, 27, 0.8);
+  border-radius: 3px;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.popup-container{
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-container p{
+  margin: 1rem 1rem;
+  font-size: 1.5rem;
+
+}
+.popup-close{
+  margin: 5px;
+  order: -1;
+  align-self: flex-end;
+  background-color: rgb(255, 81, 0);
+  padding: 2px 8px;
+  border-radius: 51px;
+}
+.popup-close:hover{
+  transform: scale(1.3);
+}
+
+.buttons{
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+
+.buttons li{
+  flex: 1;
+  margin: 0.5rem;
+  cursor: pointer;
+  background-color: rgb(102, 99, 91);
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.popup-yes:hover{
+  background-color: chartreuse;
+  transform: scale(1.05);
+}
+
+.popup-no:hover{
+  background-color: rgb(230, 82, 38);
+  transform: scale(1.05);
 }

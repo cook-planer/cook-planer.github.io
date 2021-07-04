@@ -6,7 +6,7 @@ const homeTemplate = () => html`
         <div class="first-page">
             <img src="/static/Images/first-page.jpg">
             <div class="center-text">
-            <h1>Make your weekly menu</h1>
+                <h1>Make your weekly menu</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum voluptas maiores, nihil esse nam
                     mollitia incidunt ad, asperiores earum corrupti totam ratione, itaque laboriosam reprehenderit et
                     sed? Quasi, eius provident!</p>
@@ -18,9 +18,11 @@ const homeTemplate = () => html`
 
 export async function homePage(ctx) {
     const user = await getUserData();
-    if (user){
+    if (user) {
         ctx.page.redirect('/create');
     }
-    ctx.render(homeTemplate());
-    ctx.userNav();
+    else {
+        ctx.render(homeTemplate());
+        ctx.userNav();
+    }
 }

@@ -3,7 +3,7 @@ import { html } from '//unpkg.com/lit-html?module';
 
 const groceryTemplate = (onClick, products) => html`
     <div class="shop-container">
-        <h1><i class="fas fa-shopping-basket"></i>Shoping List:</h1>
+    <h1>Shoping List:</h1>
         <div @click=${onClick} class="shoping-card">
             ${products.map(item)}
         </div>

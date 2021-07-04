@@ -1,32 +1,40 @@
 .shop-container {
     display: flex;
+    width: 100%;
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
     margin: 15px 35px;
+    background-color: rgb(253, 253, 253);
+    box-shadow: 15px 11px 24px -4px rgba(0, 0, 0, 0.34);
 }
 
 .shop-container h1 {
     display: inline;
-    margin: auto;
+    margin: 1.5rem auto;
+    color: rgb(15, 193, 74);
+    font-size: 2rem;
+}
+
+.shop-container h1::before{
+    font-family: 'FontAwesome';
+    content: '\f291';
 }
 
 .shoping-card {
-    width: 65%;
-    margin: 20px;
-    padding: 25px;
+    width: 90%;
+    padding: 1rem;
     display: inherit;
     flex-direction: column;
-    background-color: rgb(253, 253, 253);
-    box-shadow: 15px 11px 24px -4px rgba(0, 0, 0, 0.34);
 }
 
 .product-wrapper {
     display: inherit;
     margin: 10px;
     justify-content: space-between;
-    border-bottom: 1px inset darkslategray;
+    color: rgb(26, 24, 24);
+    border-bottom: 1px inset rgb(68, 90, 90);
 }
 
 .product-wrapper .done {
@@ -42,13 +50,4 @@
     transform: scale(1.25);
 }
 
-.first-page {
-    position: relative;
-    text-align: center;
-    color: white
-}
 
-.msg {
-    font-size: 14px;
-    color: #e41c1c;
-}
