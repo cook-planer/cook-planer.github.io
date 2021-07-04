@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya&display=swap');
-* {
+*{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -11,7 +11,9 @@ html {
     font-family: 'Alegreya', 'Georgia', serif;
     font-size: 90%;
 }
-
+body{
+    margin: -9px;
+}
 a, h1, h2 {
     text-decoration: none;
     color: rgb(243, 236, 236);

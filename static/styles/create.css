@@ -1,0 +1,55 @@
+/* card for choises */
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 2rem;
+}
+
+.cards{
+    width: 80%;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.cards h1 {
+    color: #43A047;
+    margin: 10px auto;
+}
+
+.card-container .button{
+    margin: 10px auto;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    width: 90%;
+    margin:2rem;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    padding: 12px;
+    transition: all .2s ease-in-out;
+}
+
+.card-content{
+    margin: auto;
+}
+
+.fa-drumstick-bite, .fa-carrot {
+    color: rgb(70, 70, 70)
+}
+
+
+@media only screen and (min-width: 768px) {
+    .cards{
+        display: flex;
+        flex-direction: row;
+    }
+}

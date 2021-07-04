@@ -1,5 +1,6 @@
 .containers {
   display: flex;
+  justify-content: center;
 }
 
 nav {
@@ -12,9 +13,11 @@ nav {
 .logo {
   font-size: 2rem;
   margin-left: 1.5rem;
+  margin-top: 1rem;
 }
 
 .hamburger {
+  margin-top: 1.5rem;
   margin-right: 2rem;
   cursor: pointer;
 }
@@ -124,77 +127,6 @@ nav {
   .nav-link {
     margin-right: 2rem;
   }
-}
-
-/* card for choises */
-
-.cards {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-.card-container {
-  margin: 2%;
-  display: flex;
-  flex-flow: column;
-  padding: 35px;
-}
-
-.card:hover {
-  transform: scale(1.25);
-}
-
-.card-container h1 {
-  margin: auto;
-}
-
-.card {
-  background: #4CAF50;
-  border-radius: 3px;
-  max-width: 460px;
-  background-color: #FFFFFF;
-  width: 320px;
-  margin: 45px;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-  padding: 12px;
-  transition: all .2s ease-in-out;
-}
-
-.card h1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10px auto;
-  color: #2c2e2c;
-  opacity: 85%;
-}
-
-p {
-  text-align: center;
-  margin-top: 15px;
-}
-
-.card a {
-  margin: 5px auto;
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.card-content {
-  padding: 25px;
-  margin-left: 25%;
-}
-
-.card-content h3 {
-  margin-top: 10px;
-}
-
-.fa-drumstick-bite, .fa-carrot {
-  color: rgb(70, 70, 70)
 }
 
 /*PopUp Message*/
